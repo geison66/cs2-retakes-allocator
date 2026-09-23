@@ -100,7 +100,7 @@ public class RetakesAllocator : BasePlugin
 
         if (Configs.GetConfigData().EnableCanAcquireHook)
         {
-            CustomFunctions.CCSPlayer_ItemServices_CanAcquireFunc?.Hook(OnWeaponCanAcquire, HookMode.Pre);
+            CustomFunctions.CCSPlayer_ItemServices_CanAcquire?.Hook(OnWeaponCanAcquire, HookMode.Pre);
         }
 
         if (hotReload)
